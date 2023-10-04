@@ -1,4 +1,5 @@
 import React from 'react'
+import { Metadata } from 'next';
 
 export interface ICardProperties {
   title: string;

@@ -1,6 +1,7 @@
 'use client'
 import Card, { ICardProperties } from '@/components/Card'
 import React, { ChangeEvent, useState } from 'react'
+import { Metadata } from 'next'
 
 interface ICardsWithId extends ICardProperties {
   id: number;
