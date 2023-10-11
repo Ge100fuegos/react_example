@@ -3,6 +3,10 @@ import UserCard from '@/components/UserCard'
 import React, { HTMLAttributes } from 'react'
 import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Renderizar lista de objetos'
+}
+
 interface IUsuario {
   id: number;
   firstName: string;

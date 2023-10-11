@@ -67,16 +67,16 @@ const styles = {
 };
 
  return (
-    /* <div style={styles.top3Container}>
-      {bicicletas.map((bicicleta) => (
-        <div key={bicicleta.posicion} style={styles.bicicletaItem}>
-          <div style={styles.posicion}>{`Posición ${bicicleta.posicion}`}</div>
-          <h3 style={styles.titulo}>{bicicleta.titulo}</h3>
-          <img style={styles.imagen} src={bicicleta.imagen} alt={bicicleta.titulo} />
-          <p style={styles.descripcion}>{bicicleta.descripcion}</p>
-        </div>
-      ))}
-    </div> */
+  <div className="grid grid-cols-3 gap-4">
+  {bicicletas.map((bicicleta) => (
+    <div key={bicicleta.posicion} className={`p-4 ${bicicleta.posicion === 1 ? 'col-span-3' : ''}`}>
+      <div className="text-2xl font-bold mb-2">#{bicicleta.posicion}</div>
+      <div className="text-lg font-semibold mb-2">{bicicleta.titulo}</div>
+      <img src={bicicleta.imagen} alt={bicicleta.titulo} className="w-full h-32 object-cover mb-2" />
+      <p className="text-gray-600">{bicicleta.descripcion}</p>
+    </div>
+  ))}
+</div>
   );
 }; 
 
