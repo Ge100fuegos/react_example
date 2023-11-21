@@ -1,10 +1,11 @@
 import { constants } from "buffer"
 
 enum LinkRoutes{
-    home = './examples',
-    example1 = './examples/1',
-    example2 = './examples/2',
-    example3 = './examples/3',
+    HOME = '/',
+    EXAMPLES_HOME = './examples',
+    EXAMPLES_ONE = './examples/1',
+    EXAMPLES_TWO = './examples/2',
+    EXAMPLES_THREE = './examples/3',
     ch22036 = './ch22036'
     
 }
